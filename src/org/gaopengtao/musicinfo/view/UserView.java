@@ -181,6 +181,9 @@ public class UserView extends JFrame {
 					panel1.setVisible(true);
 					lp.setVisible(false);
 				}
+				else{
+					JOptionPane.showMessageDialog(null, "注册后才能激活此功能！");
+				}
 			}
 		});
 		btnNewButton_11.setBounds(10, 100, 93, 23);
@@ -283,7 +286,7 @@ public class UserView extends JFrame {
 		Mshow.setBackground(Color.WHITE);
 		Mshow.setFont(new Font("华文隶书", Font.PLAIN, 20));
 		Mshow.setForeground(Color.RED);
-		Mshow.setBounds(387, 270, 277, 32);
+		Mshow.setBounds(149, 262, 277, 32);
 		panel1.add(Mshow);
 
 		sm_id = new JTextField();
@@ -358,7 +361,7 @@ public class UserView extends JFrame {
 			}
 		});
 
-		btnNewButton_8.setBounds(10, 331, 93, 23);
+		btnNewButton_8.setBounds(336, 204, 93, 23);
 		panel1.add(btnNewButton_8);
 
 		JButton btnNewButton_9 = new JButton("\u5220\u9664\u66F2\u98CE");
@@ -384,7 +387,7 @@ public class UserView extends JFrame {
 			}
 		});
 
-		btnNewButton_9.setBounds(10, 364, 93, 23);
+		btnNewButton_9.setBounds(455, 205, 93, 23);
 		panel1.add(btnNewButton_9);
 
 		JButton btnNewButton_12 = new JButton("\u6DFB\u52A0\u66F2\u98CE");
@@ -422,7 +425,7 @@ public class UserView extends JFrame {
 			}
 		});
 
-		btnNewButton_12.setBounds(10, 397, 93, 23);
+		btnNewButton_12.setBounds(561, 205, 93, 23);
 		panel1.add(btnNewButton_12);
 
 		JButton btnNewButton_13 = new JButton("\u4FEE\u6539\u6B4C\u624B");
@@ -454,7 +457,7 @@ public class UserView extends JFrame {
 				}
 			}
 		});
-		btnNewButton_13.setBounds(152, 331, 93, 23);
+		btnNewButton_13.setBounds(336, 233, 93, 23);
 		panel1.add(btnNewButton_13);
 
 		JButton btnNewButton_14 = new JButton("\u5220\u9664\u6B4C\u624B");
@@ -484,7 +487,7 @@ public class UserView extends JFrame {
 			}
 		});
 
-		btnNewButton_14.setBounds(152, 364, 93, 23);
+		btnNewButton_14.setBounds(455, 233, 93, 23);
 		panel1.add(btnNewButton_14);
 
 		JButton btnNewButton_15 = new JButton("\u6DFB\u52A0\u6B4C\u624B");
@@ -517,7 +520,7 @@ public class UserView extends JFrame {
 			}
 		});
 
-		btnNewButton_15.setBounds(152, 397, 93, 23);
+		btnNewButton_15.setBounds(561, 233, 93, 23);
 		panel1.add(btnNewButton_15);
 
 		JButton btnNewButton_16 = new JButton("\u4FEE\u6539\u6B4C\u66F2");
@@ -559,7 +562,7 @@ public class UserView extends JFrame {
 				}
 			}
 		});
-		btnNewButton_16.setBounds(290, 331, 93, 23);
+		btnNewButton_16.setBounds(54, 328, 93, 23);
 		panel1.add(btnNewButton_16);
 
 		JButton btnNewButton_17 = new JButton("\u5220\u9664\u6B4C\u66F2");
@@ -586,7 +589,7 @@ public class UserView extends JFrame {
 			}
 		});
 
-		btnNewButton_17.setBounds(290, 364, 93, 23);
+		btnNewButton_17.setBounds(54, 361, 93, 23);
 		panel1.add(btnNewButton_17);
 
 		JButton btnNewButton_18 = new JButton("\u6DFB\u52A0\u6B4C\u66F2");
@@ -637,7 +640,7 @@ public class UserView extends JFrame {
 			}
 		});
 
-		btnNewButton_18.setBounds(290, 397, 93, 23);
+		btnNewButton_18.setBounds(54, 394, 93, 23);
 		panel1.add(btnNewButton_18);
 
 		JButton btnNewButton_19 = new JButton("\u56DE\u53BB\u770B\u5C0F\u59D0\u59D0");
