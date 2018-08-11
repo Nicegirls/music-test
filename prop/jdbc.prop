@@ -1,0 +1,4 @@
+driverClass=oracle.jdbc.driver.OracleDriver
+url=jdbc:oracle:thin:@119.29.205.96:1521:dongyao
+username=MIMS
+psw=1234
