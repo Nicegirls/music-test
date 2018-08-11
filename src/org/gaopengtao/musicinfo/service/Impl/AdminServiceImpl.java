@@ -12,4 +12,12 @@ public class AdminServiceImpl implements AdminService {
 		AdminDao adminDao = new AdminDaoImpl();
 		return adminDao.login(admin);
 	}
+
+	@Override
+	public boolean register(Admin admin) {
+		// TODO Auto-generated method stub
+		AdminDao adminDao = new AdminDaoImpl();
+		if(adminDao.register(admin)>0) return true;
+		return false;
+	}
 }

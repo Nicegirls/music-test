@@ -12,7 +12,7 @@ import org.gaopengtao.musicinfo.service.Impl.AdminServiceImpl;
 
 import javax.swing.JTextField;
 import javax.swing.JLabel;
-
+import javax.swing.JOptionPane;
 import javax.swing.JPasswordField;
 import javax.swing.JButton;
 import java.awt.Toolkit;
@@ -135,11 +135,18 @@ public class LoginView extends JFrame {
 		button.setBounds(113, 267, 93, 23);
 		cp.add(button);
 
-		JButton button_1 = new JButton("\u91CD\u7F6E");
+		JButton button_1 = new JButton("\u6CE8\u518C");
 		button_1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				ms_name.setText("");
-				ms_psw.setText("");
+				String name = ms_name.getText();
+				String psw = ms_psw.getPassword().toString().trim();
+				if ("".equals(name) || "".equals(psw)) JOptionPane.showMessageDialog(null, "用户名，密码不能为空！");
+				else{
+					AdminService admin = new AdminServiceImpl();
+					boolean a = admin.register(new Admin());
+					if(a) JOptionPane.showMessageDialog(null, "注册成功！");
+					else JOptionPane.showMessageDialog(null, "注册失败！");
+				}
 			}
 		});
 		button_1.setBounds(227, 267, 93, 23);

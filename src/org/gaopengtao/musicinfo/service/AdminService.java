@@ -10,4 +10,10 @@ public interface AdminService {
 	 * @return
 	 */
 	public boolean login(Admin admin);
+	/**
+	 * ×¢²áÓÃ»§
+	 * @param admin
+	 * @return
+	 */
+	public boolean register(Admin admin);
 }

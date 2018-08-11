@@ -10,5 +10,10 @@ public interface AdminDao {
 	 * @return
 	 */
 	public abstract boolean login(Admin admin);
-
+	/**
+	 * ×¢²áÓÃ»§
+	 * @param admin
+	 * @return
+	 */
+	public int register(Admin admin);
 }

@@ -26,4 +26,14 @@ public class AdminDaoImpl implements AdminDao {
 		return false;
 	}
 
+	@Override
+	public int register(Admin admin) {
+		// TODO Auto-generated method stub
+		String sql = "insert into admin(a_name,a_password) values of(?,?)";
+		lo.clear();
+		lo.add(admin.getA_name());
+		lo.add(admin.getA_password());
+		return BaseDao.updateInfo(sql, lo);
+	}
+
 }

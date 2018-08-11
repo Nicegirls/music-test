@@ -204,7 +204,7 @@ public class UserView extends JFrame {
 		panel_1.setLayout(null);
 
 		JLabel lblNewLabel_8 = new JLabel("New label");
-		lblNewLabel_8.setBounds(0, 0, 691, 480);
+		lblNewLabel_8.setBounds(0, 0, 673, 480);
 		panel_1.add(lblNewLabel_8);
 		lblNewLabel_8.setIcon(new ImageIcon("D:\\picture\\TIM\u56FE\u724720180727150533.png"));
 
